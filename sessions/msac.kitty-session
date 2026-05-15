@@ -1,0 +1,32 @@
+
+new_tab
+layout splits
+enabled_layouts splits
+set_layout_state {"pairs": {"bias": 0.6976837060702857, "one": 1, "two": {"horizontal": false, "one": 2, "two": 4}}, "opts": {"default_axis_is_horizontal": true}, "class": "Splits", "all_windows": {"active_group_idx": 2, "active_group_history": [1, 4, 2], "window_groups": [{"id": 1, "window_ids": [1]}, {"id": 2, "window_ids": [2]}, {"id": 4, "window_ids": [4]}]}}
+cd ../../../Documents/mt_reps
+
+launch 'kitty-unserialize-data={"id": 1, "cmd_at_shell_startup": "claude"}'
+launch 'kitty-unserialize-data={"id": 2}' --cwd=../../../Documents/mt_reps/webapi-pix
+launch 'kitty-unserialize-data={"id": 4}' --cwd=../../../Documents/mt_reps/docs
+focus
+
+new_tab
+layout splits
+enabled_layouts splits
+set_layout_state {"pairs": {"one": 9, "two": 10}, "opts": {"default_axis_is_horizontal": true}, "class": "Splits", "all_windows": {"active_group_idx": 1, "active_group_history": [10, 9], "window_groups": [{"id": 9, "window_ids": [9]}, {"id": 10, "window_ids": [10]}]}}
+cd ../../../Documents/my_reps/budget-tracker
+
+launch 'kitty-unserialize-data={"id": 9, "cmd_at_shell_startup": "codex"}'
+launch 'kitty-unserialize-data={"id": 10}'
+focus
+
+new_tab
+layout splits
+enabled_layouts splits
+set_layout_state {"pairs": {"one": 11}, "opts": {"default_axis_is_horizontal": true}, "class": "Splits", "all_windows": {"active_group_idx": 0, "active_group_history": [11], "window_groups": [{"id": 11, "window_ids": [11]}]}}
+cd ../../..
+
+launch 'kitty-unserialize-data={"id": 11}'
+focus
+
+focus_tab 0

@@ -1,0 +1,12 @@
+
+new_tab
+layout splits
+enabled_layouts splits
+set_layout_state {"pairs": {"bias": 0.6932907348242794, "one": 1, "two": 2}, "opts": {"default_axis_is_horizontal": true}, "class": "Splits", "all_windows": {"active_group_idx": 1, "active_group_history": [2, 1], "window_groups": [{"id": 1, "window_ids": [1]}, {"id": 2, "window_ids": [2]}]}}
+cd ../../../Documents/my_reps
+
+launch 'kitty-unserialize-data={"id": 1, "cmd_at_shell_startup": "gemini"}'
+launch 'kitty-unserialize-data={"id": 2}' --cwd=../../..
+focus
+
+focus_tab 0
