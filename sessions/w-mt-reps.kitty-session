@@ -1,0 +1,13 @@
+
+new_tab
+layout splits
+enabled_layouts splits
+set_layout_state {"pairs": {"bias": 0.3901757188498398, "one": {"horizontal": false, "bias": 0.47619047619047616, "one": 2, "two": 3}, "two": 8}, "opts": {"default_axis_is_horizontal": true}, "class": "Splits", "all_windows": {"active_group_idx": 1, "active_group_history": [5, 4, 3, 2, 8], "window_groups": [{"id": 2, "window_ids": [3]}, {"id": 3, "window_ids": [4]}, {"id": 8, "window_ids": [9]}]}}
+cd /home/fulmination/Documents/mt_reps
+
+launch 'kitty-unserialize-data={"id": 3, "cmd_at_shell_startup": ["/home/fulmination/.local/share/claude/versions/2.1.142"]}'
+launch 'kitty-unserialize-data={"id": 4}'
+focus
+launch 'kitty-unserialize-data={"id": 9, "cmd_at_shell_startup": "lazygit"}' --cwd=/home/fulmination/Documents/mt_reps/docs
+
+focus_tab 0

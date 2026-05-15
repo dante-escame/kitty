@@ -1,0 +1,12 @@
+
+new_tab
+layout splits
+enabled_layouts splits
+set_layout_state {"pairs": {"bias": 0.4912306816472647, "one": 10, "two": 11}, "opts": {"default_axis_is_horizontal": true}, "class": "Splits", "all_windows": {"active_group_idx": 1, "active_group_history": [14, 15, 11, 10], "window_groups": [{"id": 10, "window_ids": [14]}, {"id": 11, "window_ids": [15]}]}}
+cd /home/fulmination/.config/kitty
+
+launch 'kitty-unserialize-data={"id": 14, "cmd_at_shell_startup": "lazygit"}'
+launch 'kitty-unserialize-data={"id": 15}'
+focus
+
+focus_tab 2
